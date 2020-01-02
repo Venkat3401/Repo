@@ -124,6 +124,7 @@
     <Compile Include="UCI\Update\UpdateContact.cs" />
     <Compile Include="UCI\Update\UpdateLead.cs" />
     <Compile Include="UCI\Update\UpdateOpportunity.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Web\BusinessProcessFlow\BusinessProcessFlow.cs" />
     <Compile Include="Web\CommandBar\CommandButton.cs" />
     <Compile Include="Web\Delete\DeleteAccount.cs" />
