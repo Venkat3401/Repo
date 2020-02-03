@@ -8,11 +8,11 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample
 {
     public static class TestSettings
     {
-        public static string InvalidAccountLogicalName = "accounts";
+        public static string InvalidOrderLogicalName = "Orders";
 
-        public static LookupItem LookupValues = new LookupItem { Name = "primarycontactid", Value = "Nancy Anderson (sample)" } ;
-        public static string LookupField = "primarycontactid";
-        public static string LookupName = "Nancy Anderson (sample)";
+        public static LookupItem LookupValues = new LookupItem { Name = "Customer Id", Value = "MTC" } ;
+        public static string LookupField = "Customer Id";
+        public static string LookupName = "MTC";
         private static readonly string Type = System.Configuration.ConfigurationManager.AppSettings["BrowserType"].ToString();
         private static readonly string RemoteType = System.Configuration.ConfigurationManager.AppSettings["RemoteBrowserType"].ToString();
         private static readonly string RemoteHubServerURL = System.Configuration.ConfigurationManager.AppSettings["RemoteHubServer"].ToString();
@@ -73,10 +73,10 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample
 
     public static class UCIAppName
     {
-        public static string Sales = "Sales Hub";
-        public static string CustomerService = "Customer Service Hub";
-        public static string Project = "Project Resource Hub";
-        public static string FieldService = "Field Resource Hub";
+       // public static string Sales = "Sales Hub";
+       // public static string CustomerService = "Customer Service Hub";
+       // public static string Project = "Project Resource Hub";
+      //  public static string FieldService = "Field Resource Hub";
         public static string GravityNewUI = "Gravity New UI Hub";
     }
 }
