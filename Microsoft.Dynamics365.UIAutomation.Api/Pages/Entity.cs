@@ -29,6 +29,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
 
         private readonly string _navigateDownCssSelector = "img.recnav-down.ms-crm-ImageStrip-Down_Enabled_proxy";
         private readonly string _navigateUpCssSelector = "img.recnav-up.ms-crm-ImageStrip-Up_Enabled_proxy";
+        private object optionValue;
 
         /// <summary>
         /// Clears the value of a Text field on an Entity header
@@ -1856,7 +1857,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
         {
             return this.Execute(GetOptions($"Set TwoOption Header Value: {option.Name}"), driver =>
             {
-                var isBoolean = bool.TryParse(option.Value, out var optionValue);
+                var isBoolean = bool.TryParse(option.Value, out EnvironmentVariableTargetoptionValue);
                 if (!isBoolean)
                     throw new ArgumentException($"Value {option.Value}: Cannot be converted to a boolean value");
 

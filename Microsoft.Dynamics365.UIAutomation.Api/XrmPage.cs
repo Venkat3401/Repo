@@ -792,7 +792,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api
         {
             return this.Execute(GetOptions($"Set TwoOption Value: {option.Name}"), driver =>
             {
-                var isBoolean = bool.TryParse(option.Value, out var optionValue);
+                var isBoolean = bool.TryParse(option.Value, out option.Value);
                 if (!isBoolean)
                     throw new ArgumentException($"Value {option.Value}: Cannot be converted to a boolean value");
 
