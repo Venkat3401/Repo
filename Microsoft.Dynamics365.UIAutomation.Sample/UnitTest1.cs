@@ -33,7 +33,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample
 
                 xrmBrowser.ThinkTime(2000);
                 xrmBrowser.Grid.SwitchView("Active Contacts");
-
+                //Open Record
                 xrmBrowser.ThinkTime(1000);
                 xrmBrowser.Grid.OpenRecord(0);
 
