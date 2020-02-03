@@ -22,7 +22,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample
             {
                 xrmBrowser.LoginPage.Login(_xrmUri, _username, _password);
                 xrmBrowser.GuidedHelp.CloseGuidedHelp();
-
+     
                 var perf = xrmBrowser.PerformanceCenter;
 
                 if (!perf.IsEnabled)
